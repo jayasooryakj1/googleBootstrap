@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0px;
+}
+
+body{
+	font-family: Arial;
+}
+
+.searchBar{
+	background-color:rgb(242, 246, 252);
+}
+
+.searchBar input{
+	background-color:rgb(242, 246, 252);
+	border:none;
+}
+
+.sideNav{
+	background-color:rgb(234, 241, 251);
+}
