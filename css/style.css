@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding:0px;
+}
+
+body{
+	font-family: Arial;
+	background-color:rgb(246, 248, 252);
+}
+
+.gmail{
+	font-size:20px;
+}
+
+.searchBar{
+	background-color:rgb(234, 241, 251);
+}
+
+.searchBar input{
+	background-color:rgb(234, 241, 251);
+	border:none;
+}
+
+.sideNav{
+	background-color:rgb(234, 241, 251);
+}
+
+.active{
+	background-color:rgb(234, 241, 251);
+}
+
+.techV{
+	background-color:rgb(255, 255, 255);
+}
+
+.mainBody{
+	height:88vh;
+}
+
+.main{
+	height:97vh;
+}
+
+.compose{
+	background-color:rgb(194, 231, 255);
+	height:50px;
+	width:150px;
+}
+
+.compose:hover{
+	box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.5);
+}
+
+.inbox{
+	background-color:rgb(211, 227, 253);
+	width:200px;
+}
+
+.inbox:hover{
+	cursor:pointer;
+}
+
+.ButtonGroup{
+	width:200px;
+}
+
+.ButtonGroup:hover{
+	cursor:pointer;
+	background-color:rgb(234, 235, 239);
+}
+
+.plus{
+	margin-left:60px;
+}
