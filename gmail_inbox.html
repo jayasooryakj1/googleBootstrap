@@ -1,176 +1,1023 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Inbox</title>
 	<link rel="icon" type="image/x-icon" href="assets/images/mailFavicon.png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<link rel="stylesheet" href="C:/Users/Jayasoorya/Desktop/gmail Bootstrap/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="main">
-
-
-	<!-- Header -->
-	<div class="row">
-		<div class="sideNav col-1">
-				<img class="ms-xl-5 ms-lg-4 ms-md-4 mt-3" src="assets/images/opt.png" alt="optIcon" width="15">
+	<div class="col-12 d-flex">
+		<div class="col-xl-1 col-lg-1 ps-5 pt-3 d-none d-xl-block d-lg-block sideNav">
+			<img src="assets/images/opt.png" alt="optIcon" width="10">
 		</div>
-		<div class="gmail col-xl-2 col-lg-2 col-md-4 d-flex">
-				<div class="mt-2">
-					<img src="assets/images/mailFavicon.png" alt="mailFavicon" width="35">
-				</div>
-				<div class="mt-3 ms-1">
-					<p>Gmail</p>
-				</div>
-		</div>
-		<div class="searchBar row pt-2 rounded-pill col-lg-4 col-md-1">
-			<div class="col-1">
-				<img class="mt-3" src="assets/images/search.png" alt="searchIcon" width="15">
+		<div class="col-2 d-flex ps-md-4 ps-sm-4 ps-xs-4 mail">
+			<div>
+				<img src="assets/images/mailFavicon.png" alt="mailFavicon" width="50">
 			</div>
-			<div class="col-10 d-lg-block d-xl-block d-none ">
-				<input class="mt-3 ms-2" type="text" placeholder="Search mail">
-			</div>
-			<div class="col-1 d-lg-block d-xl-block d-none">
-				<img class="mt-3" src="assets/images/searchOption.png" alt="searchOptionIcon" width="15">
+			<div class="mt-3 d-none d-xl-block d-lg-block">
+				<p>Gmail</p>
 			</div>
 		</div>
-		<div class="row col-5">
-			<div class="active col-xl-3 col-lg-2 col-md-3 ms-3 pt-2 rounded-pill d-flex">
-				<div>
-					<img class="mt-3 ms-1" src="assets/images/greenDot.png" alt="greenDot" width="10">
-				</div>
-				<div>
-					<p class="mt-2 ms-2 d-none d-xl-block">Active</p>
-				</div>
-				<div>
-					<img class="mt-3 ms-xl-2 ms-lg-2" src="assets/images/more.png" alt="moreIcon" width="10">
-				</div>
-			</div>
-			<div class="row col-md-5 pt-3">
-				<div class="col-4">
-					<img src="assets/images/qnMark.webp" alt="qnMark" width="20">
-				</div>
-				<div class="col-4">
-					<img src="assets/images/setting.png" alt="settingsIcon" width="20">
-				</div>
-				<div class="col-4">
-					<img src="assets/images/dotsMenu.png" alt="dotsMenu" width="20">
-				</div>
-			</div>
-			<div class="techV ms-2 col-lg-2 col-md-4 row rounded-3">
-				<div class="col-8 mt-3">
-					<img src="assets/images/techV.png" alt="techV" width="80">
-				</div>
-				<div class="col-4 mt-3">
-					<img src="assets/images/j.png" alt="jImg" width="30">
-				</div>
+		<div class="col-8 d-lg-none d-xl-none">
+			<div class="mvHeaderBig">
+				<p>Upgrade to a smarter Gmail</p>
+				<p class="mvHeaderSmall">Secure, fast & organized email</p>
 			</div>
 		</div>
-	</div><!-- Header End -->
-
-
-
-	<div class="mainBody row">
-		
-		
-
-		<!-- Side Nav -->
-		<div class="sideNav col-1 d-xl-block d-lg-block d-none border">
-			<img class="ms-xl-5 ms-lg-4" src="assets/images/gmailSide.png" alt="mail" width="15">
-			<p class="ms-xl-4 ms-lg-2">Mail</p>
-			<img class="ms-xl-5 ms-lg-4" src="assets/images/chats.png" alt="chats" width="15">
-			<p class="ms-xl-4 ms-lg-2">Chat</p>
-			<img class="ms-xl-5 ms-lg-4" src="assets/images/meet.png" alt="meet" width="15">
-			<p class="ms-xl-4 ms-lg-2">Meet</p>
+		<div class="open col-2 d-xl-none d-lg-none ps-2 pt-4">
+			<p>OPEN</p>
 		</div>
-
-		
-
-
-
-
-
-
-		<!-- side -->
-		<div class="col-lg-2 col-md-3 d-xl-block d-lg-block d-none border">
-			<div class="compose rounded-3 mt-3 pt-2">
-				<button class="btn d-flex">
-					<img src="assets/images/pen.png" alt="penIcon" width="15">
-					<p class="ms-2">Compose</p>
-				</btton>
+		<div class="d-none d-xl-none d-lg-none col-2">
+		</div>
+		<div class="searchBar d-none rounded-pill pt-3 d-xl-flex d-lg-flex col-xl-4 col-lg-4">
+			<div class="ms-4">
+				<img src="assets/images/search.png" alt="searchIcon" width="15">
 			</div>
-			<div class="d-flex inbox mt-3 rounded-pill">
-				<div>
-					<img class="ms-3 mt-3" src="assets/images/inbox.png" alt="inbox" width="15">
-				</div>
-				<div>
-					<p class="ms-2 mt-2">Inbox</p>
-				</div>
+			<div class="ms-4 me-xl-5">
+				<input type="text" placeholder="Search mail">
 			</div>
-			<div class="d-flex ButtonGroup rounded-pill">
-				<div>
-					<img class="ms-3 mt-3" src="assets/images/star.png" alt="inbox" width="15">
-				</div>
-				<div>
-					<p class="ms-2 mt-2">Starred</p>
-				</div>
-			</div>
-			<div class="d-flex ButtonGroup rounded-pill">
-				<div>
-					<img class="ms-3 mt-3" src="assets/images/clock.png" alt="clock" width="15">
-				</div>
-				<div>
-					<p class="ms-2 mt-2">Snoozed</p>
-				</div>
-			</div>
-			<div class="d-flex ButtonGroup rounded-pill">
-				<div>
-					<img class="ms-3 mt-3" src="assets/images/sent.png" alt="sent" width="15">
-				</div>
-				<div>
-					<p class="ms-2 mt-2">Sent</p>
-				</div>
-			</div>
-			<div class="d-flex ButtonGroup rounded-pill">
-				<div>
-					<img class="ms-3 mt-3" src="assets/images/drafts.png" alt="drafts" width="15">
-				</div>
-				<div>
-					<p class="ms-2 mt-2">Drafts</p>
-				</div>
-			</div>
-			<div class="d-flex ButtonGroup rounded-pill">
-				<div>
-					<img class="ms-3 mt-3" src="assets/images/more.png" alt="more" width="15">
-				</div>
-				<div>
-					<p class="ms-2 mt-2">More</p>
-				</div>
-			</div>
-			<div class="d-flex mt-4 ms-4">
-				<div class="me-5">
-					<p>Label</p>
-				</div>
-				<div>
-					<img class="plus" src="assets/images/plus.png" alt="plus" width="14">
-				</div>
+			<div class="ms-xl-4 ps-xl-5 ms-lg-4 ps-lg-2">
+				<img src="assets/images/searchOption.png" alt="searchOption" width="15">
 			</div>
 		</div>
-
-
-
-
-
-
-
-		<div class="col-xl-8 col-lg-8 col-md-12 border">
-			col 3
+		<div class="ms-2 pt-3 active rounded-pill col-xl-1 col-lg-1 d-none d-xl-flex d-lg-flex">
+			<div>
+				<img class="ms-3" src="assets/images/greenDot.png" alt="greenDot" width="10">
+			</div>
+			<div class="ms-3 d-none d-xl-block">
+				<p>Active</p>
+			</div>
+			<div class="ms-xl-3">
+				<img src="assets/images/more.png" alt="moreIcon" width="10">
+			</div>
+		</div>
+		<div class="row d-none d-xl-flex d-lg-flex col-xl-2 col-lg-2">
+			<div class="col-4 pt-3">
+				<img src="assets/images/qnMark.webp" alt="qnMark" width="20">
+			</div>
+			<div class="col-4 pt-3">
+				<img src="assets/images/setting.png" alt="settingsIcon" width="20">
+			</div>
+			<div class="col-4 pt-3">
+				<img src="assets/images/dotsMenu.png" alt="dotsMenu" width="20">
+			</div>
+		</div>
+		<div class="techV ps-4 pt-2 rounded-3 d-none d-lg-flex d-xl-flex col-xl-2 col-lg-2">
+			<div>
+				<img src="assets/images/techV.png" alt="techV" width="100">
+			</div>
+			<div>
+				<img class="ms-2" src="assets/images/j.png" alt="jImg" width="40">
+			</div>
 		</div>
 	</div>
-
-
-
+	<div class="col-12 main d-flex">
+		<div class="pt-2 sideNav d-none d-xl-block col-xl-1">
+			<div class="ms-5">
+				<img src="assets/images/gmailSide.png" alt="mailIcon" width="15">
+			</div>
+			<div class="ms-5">
+				<p>Mail</p>
+			</div>
+			<div class="ms-5">
+				<img src="assets/images/chats.png" alt="chatIcon" width="15">
+			</div>
+			<div class="ms-5">
+				<p>Chat</p>
+			</div>
+			<div class="ms-5">
+				<img src="assets/images/meet.png" alt="meetIcon" width="15">
+			</div>
+			<div class="ms-5">
+				<p>Meet</p>
+			</div>
+		</div>
+		<div class="d-none d-xl-block d-lg-block col-xl-2 col-lg-2">
+			<div class="compose mt-3 ms-2 rounded-3 d-flex">
+				<div class="ms-3 mt-2">
+					<img src="assets/images/pen.png" alt="penIcon" width="15">
+				</div>
+				<div class="ms-2 mt-2">
+					<p>Compose</p>
+				</div>
+			</div>
+			<div class="d-flex inbox mt-3 ms-2 rounded-pill">
+				<div class="ps-3 pt-1"><img src="assets/images/inbox.png" alt="inboxIcon" width="10"></div>
+				<div class="ps-2 pt-1">Inbox</div>
+			</div>
+			<div class="d-flex ButtonGroup ms-2 rounded-pill">
+				<div class="ps-3 pt-1"><img src="assets/images/star.png" alt="starIcon" width="10"></div>
+				<div class="ps-2 pt-1">Starred</div>
+			</div>
+			<div class="d-flex ButtonGroup ms-2 rounded-pill">
+				<div class="ps-3 pt-1"><img src="assets/images/clock.png" alt="clockIcon" width="10"></div>
+				<div class="ps-2 pt-1">Snoozed</div>
+			</div>
+			<div class="d-flex ButtonGroup ms-2 rounded-pill">
+				<div class="ps-3 pt-1"><img src="assets/images/sent.png" alt="sentIcon" width="10"></div>
+				<div class="ps-2 pt-1">Sent</div>
+			</div>
+			<div class="d-flex ButtonGroup ms-2 rounded-pill">
+				<div class="ps-3 pt-1"><img src="assets/images/drafts.png" alt="draftsIcon" width="10"></div>
+				<div class="ps-2 pt-1">Drafts</div>
+			</div>
+			<div class="d-flex ButtonGroup ms-2 rounded-pill">
+				<div class="ps-3 pt-1"><img src="assets/images/more.png" alt="moreIcon" width="10"></div>
+				<div class="ps-2 pt-1">More</div>
+			</div>
+			<div class="d-flex ms-4">
+				<div class="me-5">Label</div>
+				<div class="ms-5 ps-3"><img src="assets/images/plus.png" alt="plus" width="10"></div>
+			</div>
+		</div>
+		<div class="mainContent mt-1 ms-xl-2 ms-lg-5">
+			<div class="mainHeader d-none d-lg-flex pt-1 ps-2">
+					<div class="ms-2"><img src="assets/images/square.png" alt="square" width="15"></div>
+					<div class="ms-2"><img src="assets/images/downArrow.png" alt="downArrow" width="15"></div>
+					<div class="ms-3"><img src="assets/images/refresh.png" alt="refresh" width="15"></div>
+					<div class="ms-2"><img src="assets/images/dots.png" alt="dots" width="15"></div>
+					<div class="headerNumber">1-50 of 50</div>
+					<div><img src="assets/images/leftArrow.png" alt="leftArrow" width="15"></div>
+					<div class="ms-5"><img src="assets/images/rightArrow.png" alt="rightArrow" width="15"></div>
+					<div class="ms-4"><img src="assets/images/keyboard.png" alt="keyboard" width="15"></div>
+					<div class="ms-4"><img src="assets/images/downArrow.png" alt="downArrow" width="10"></div>
+			</div>
+			<div class=" col-12 p-2 mvPrimary d-xl-none d-lg-none d-flex">
+				<div class="col-2">
+					<img class="ms-3" src="assets/images/opt.png" alt="optionIcon" width="15">
+				</div>
+				<div class="col-2 ">
+					<img src="assets/images/refresh.png" alt="refreshIcon" width="15">
+				</div>
+				<div class="col-6 d-flex">
+					<div class="ms-md-5 ms-sm-5 ps-md-5">Primary</div>
+					<div class="ms-2">1120</div>
+				</div>
+				<div class="col-2">
+					<div class="mvPen">
+						<img class="ms-2" src="assets/images/pen.png" alt="penIcon" width="15">
+					</div>
+				</div>
+			</div>
+			<div class="mvSearch d-xl-none d-lg-none ms-3 p-2 col-12 d-flex">
+				<div><img src="assets/images/search.png" alt="searchIcon" width="15"></div>
+				<div class="ms-3"><input type="text" placeholder="Search"></div>
+			</div>
+			<div class="scroll ">
+				<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="outerRow">
+					<div class="col-12 d-flex">
+						<div class="col-1 p-1 d-flex">
+							<div class="ms-3"><img class="ms-2" src="assets/images/square.png" alt="square" width="15"></div>
+							<div class="mt-1"><img class="ms-4 d-none d-xl-block" src="assets/images/star.png" alt="star" width="15"></div>
+						</div>
+						<div class="row ms-1 mt-1 col-10">
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-2">
+								HR Techversant
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-3">
+								Imp - Spam/Phishing Emails Alert.
+							</div>
+							<div class="text-truncate overflow-hidden text-nowrap col-xl-7">
+								Dear Techversans, We have noticed that Spam/Phishing emails are being received in the name of Company Leadership/Senior Management etc. 
+							</div>
+						</div>
+						<div class="col-1 mt-1">
+							<div>9:29AM</div>
+							<div><img class="mt-5 ms-3 d-xl-none d-lg-block" src="assets/images/star.png" alt="star" width="15">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 	</script>
