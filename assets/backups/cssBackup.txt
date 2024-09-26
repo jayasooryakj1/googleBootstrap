@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0px;
+}
+
+body{
+	font-family: Arial;
+	background-color:rgb(246, 248, 252);
+}
+
+.gmail{
+	font-size:20px;
+}
+
+.searchBar{
+	background-color:rgb(234, 241, 251);
+}
+
+.searchBar input{
+	background-color:rgb(234, 241, 251);
+	border:none;
+}
+
+.sideNav{
+	background-color:rgb(234, 241, 251);
+}
+
+.searchOption{
+}
+
+
+.active{
+	background-color:rgb(234, 241, 251);
+}
+
+.techV{
+	background-color:rgb(255, 255, 255);
+}
+
+.mainBody{
+	height:88vh;
+}
+
+.main{
+	height:91vh;
+}
+
+.mvHeaderBig{
+	font-weight:bold;
+	font-size:20px;
+}
+
+.mvHeaderSmall{
+	font-weight:normal;
+	font-size:17px;
+	top:0;
+}
+
+.open{
+	color:blue;
+}
+
+
+
+
+
+
+
+.compose{
+	background-color:rgb(194, 231, 255);
+	height:50px;
+	width:150px;
+}
+
+.compose:hover{
+	box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.5);
+}
+
+.inbox{
+	background-color:rgb(211, 227, 253);
+	height:30px;
+	width:190px;
+}
+
+.inbox:hover{
+	cursor:pointer;
+}
+
+.ButtonGroup{
+	width:190px;
+}
+
+.ButtonGroup:hover{
+	cursor:pointer;
+	background-color:rgb(234, 235, 239);
+}
+
+.plus{
+	margin-left:60px;
+}
+
+
+.mainHeader{
+	background-color:rgb(255, 255, 255);
+	border:1px solid blue;
+	height:40px;
+	border-radius:15px 15px 0px 0px;
+}
+.headerNumber{
+	margin-left:55%;
+	width:200px;
+}
+
+.mainContent{
+	border:1px solid red;
+	width:100%;
+}
